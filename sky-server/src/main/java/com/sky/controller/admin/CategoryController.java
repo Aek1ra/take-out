@@ -24,7 +24,6 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
-
     /**
      * 新增分类
      * @param categoryDTO
