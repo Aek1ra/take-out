@@ -18,12 +18,11 @@ public interface EmployeeService {
     /**
      * 新增员工
      * @param employeeDTO
-     * @return
      */
     void save(EmployeeDTO employeeDTO);
 
     /**
-     * 分页查询方法
+     * 分页查询
      * @param employeePageQueryDTO
      * @return
      */
