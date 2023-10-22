@@ -10,12 +10,12 @@ spring:
     druid:
       driver-class-name: ${sky.datasource.driver-class-name}
       url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: root
-      password: 12345678
+      username: ${sky.datasource.username}
+      password: ${sky.datasource.password}
   redis:
     host: ${sky.redis.host}
-    port: ${sky.redis.port}
-    password: ${sky.redis.password}
+    port: ${sky.redis.port}+
+
     database: ${sky.redis.database}
 
 mybatis:
@@ -45,14 +45,19 @@ sky:
     user-secret-key: itheima
     user-ttl: 7200000
     user-token-name: authentication
-  alioss:
-    endpoint: ${sky.alioss.endpoint}
-    access-key-id: ${sky.alioss.access-key-id}
-    access-key-secret: ${sky.alioss.access-key-secret}
-    bucket-name: ${sky.alioss.bucket-name}
+  cos:
+    #访问域名
+    rootSrc: ${sky.cos.rootSrc}
+    #所属地域
+    bucketAddr: ${sky.cos.bucketAddr}
+    SecretId: ${sky.cos.SecretId}
+    SecretKey: ${sky.cos.SecretKey}
+    #存储桶名称
+    bucketName: ${sky.cos.bucketName}
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+
     mchid: ${sky.wechat.mchid}
     mchSerialNo: ${sky.wechat.mchSerialNo}
     privateKeyFilePath: ${sky.wechat.privateKeyFilePath}
@@ -62,6 +67,8 @@ sky:
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
 
   shop:
+    #对应地址
     address: 西安市雁塔区丈八六路一号
+    #百度地图秘钥
   baidu:
     ak: KNGzHBM8XTWtKBRx1OQI7pKGKjCGqgeN

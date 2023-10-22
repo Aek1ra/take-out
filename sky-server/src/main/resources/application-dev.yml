@@ -5,24 +5,25 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: 12345678
-  alioss:
-    endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: LTAI5tPznhCzK44ZY64kQ7Sf
-    access-key-secret: T6vmFwmgddHkpxZr24AtDTy0GSKyzu
-    bucket-name: sky-take-out-stringzhua
+    password: sa123456
+  cos:
+    rootSrc: https://takeout-1316786888.cos.ap-nanjing.myqcloud.com
+    bucketAddr: ap-nanjing
+    SecretId: AKID8C6mGZTAF8rPjphLo6B4wd6A3lGXZR6Y
+    SecretKey: HU0NkrobBXgfS0LYaOyJUM0PbcOwGQNH
+    bucketName: takeout-1316786888
   redis:
     host: localhost
     port: 6379
-    password: 123456
-    database: 10
+    database: 0
   wechat:
-    appid: wx1217314acbe1a4db
-    secret: 4acf546483603acb33a57743ac60f844
-    mchid: 1561414331
-    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
-    privateKeyFilePath: D:\pay\apiclient_key.pem
-    apiV3Key: CZBK51236435wxpay435434323FFDuv3
-    weChatPayCertFilePath: D:\pay\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
-    notifyUrl:  https://1ad32bb9.r18.cpolar.top/notify/paySuccess
-    refundNotifyUrl: https://1ad32bb9.r18.cpolar.top/notify/refundSuccess
+    appid: wxe9b2017582aba0d2
+    secret: 32c3f7feeb85465a0ba2fae85f927ea4
+
+#    mchid: 1561414331
+#    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
+#    privateKeyFilePath: D:\pay\apiclient_key.pem
+#    apiV3Key: CZBK51236435wxpay435434323FFDuv3
+#    weChatPayCertFilePath: D:\pay\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+#    notifyUrl:  https://1ad32bb9.r18.cpolar.top/notify/paySuccess
+#    refundNotifyUrl: https://1ad32bb9.r18.cpolar.top/notify/refundSuccess
