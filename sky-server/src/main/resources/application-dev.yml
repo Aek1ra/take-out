@@ -9,8 +9,8 @@ sky:
   cos:
     rootSrc: https://takeout-1316786888.cos.ap-nanjing.myqcloud.com
     bucketAddr: ap-nanjing
-    SecretId: AKID8C6mGZTAF8rPjphLo6B4wd6A3lGXZR6Y
-    SecretKey: HU0NkrobBXgfS0LYaOyJUM0PbcOwGQNH
+    SecretId:
+    SecretKey:
     bucketName: takeout-1316786888
   redis:
     host: localhost
