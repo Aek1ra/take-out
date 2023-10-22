@@ -7,8 +7,8 @@ sky:
     username: root
     password: sa123456
   cos:
-    rootSrc: https://takeout-1316786888.cos.ap-nanjing.myqcloud.com
-    bucketAddr: ap-nanjing
+    rootSrc:
+    bucketAddr:
     SecretId:
     SecretKey:
     bucketName: takeout-1316786888
@@ -17,8 +17,8 @@ sky:
     port: 6379
     database: 0
   wechat:
-    appid: wxe9b2017582aba0d2
-    secret: 32c3f7feeb85465a0ba2fae85f927ea4
+    appid:
+    secret:
 
 #    mchid: 1561414331
 #    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
